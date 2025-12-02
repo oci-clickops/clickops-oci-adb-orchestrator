@@ -1,11 +1,3 @@
-terraform {
-  required_providers {
-    oci = {
-      source = "oracle/oci"
-    }
-  }
-}
-
 locals {
   # Extract ADB configuration following the orchestrator's pattern
   adbs_config = var.autonomous_databases_configuration != null ? var.autonomous_databases_configuration.autonomous_databases : {}
